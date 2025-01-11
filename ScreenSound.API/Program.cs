@@ -24,6 +24,7 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =
  uma fonte externa ao invés de criarem-nas diretamente. Isso facilita o gerenciamento das dependências
  e promove um código mais modular, testável e fácil de manter.
 */
+builder.Services.AddCors();
 builder.Services.AddDbContext<ScreenSoundContext>();
 builder.Services.AddTransient<DAL<Artista>>();
 builder.Services.AddTransient<DAL<Musica>>();
@@ -39,5 +40,11 @@ app.AddEndPointGeneros();
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.UseCors(x=>x
+   .AllowAnyMethod()
+   .AllowAnyHeader()
+   .SetIsOriginAllowed(origin => true)
+   .AllowCredentials());
 
 app.Run();
