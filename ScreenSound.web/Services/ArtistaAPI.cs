@@ -1,4 +1,5 @@
 ﻿
+using ScreenSound.web.Requests;
 using ScreenSound.web.Response;
 using System.Net.Http.Json;
 
@@ -16,4 +17,10 @@ public class ArtistasAPI
     {
         return await _httpClient.GetFromJsonAsync<ICollection<ArtistaResponse>>("artistas");
     }
+
+    public async Task AddArtistaAsync(ArtistaRequest artista)
+    {
+        await _httpClient.PostAsJsonAsync("artistas", artista);
+    }
+
 }
