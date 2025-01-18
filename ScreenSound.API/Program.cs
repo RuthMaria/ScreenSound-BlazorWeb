@@ -38,6 +38,8 @@ app.AddEndPointsArtistas();
 app.AddEndPointsMusicas();
 app.AddEndPointGeneros();
 
+app.UseStaticFiles();
+
 app.UseSwagger();
 app.UseSwaggerUI();
 
