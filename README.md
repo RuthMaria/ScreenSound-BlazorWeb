@@ -22,12 +22,13 @@
 O Screen Sound é uma aplicação que permite:
 
 - Registar artistas
-- Registrar musicas de um artista
-- Listar artistas
-- Listar músicas de um artista
-- Listar músicas por ano de lançamento
+- Atualizar artista
+- Deletar artista
+- Visualizar artistas
+- Visualizar musicas por artista
+- Cadastrar musica
 
-Onde foi criada uma API com C# utilizando um template mínimo, ao qual foi aplicado boas práticas na sua construção e utilização do Swagger para documentá-la.
+Onde esta aplicação foi desenvolvida utilizando o ASP.Net Blazor, onde foi criado componentes Razor e incrementado o layout da nossa aplicação utilizando bibliotecas.
 
 <a id="technologies"></a><br>
 
@@ -36,12 +37,13 @@ Onde foi criada uma API com C# utilizando um template mínimo, ao qual foi aplic
 - C#
 - SQL Server
 - Entity Framework
+- Blazor
 
 <a id="preview"></a><br>
 
 ## :tv: Prévia
 
-<img src="./tela.png">
+<img src="./video.gif">
 
 <a id="rodar"></a><br>
 
@@ -50,7 +52,7 @@ Onde foi criada uma API com C# utilizando um template mínimo, ao qual foi aplic
 - Clonar este repositório
 
 ```
-git clone https://github.com/RuthMaria/3506-csharpWeb-screensound.git
+git clone https://github.com/RuthMaria/ScreenSound-BlazorWeb.git
 ```
 
 - Rodar o projeto no Visual Studio
